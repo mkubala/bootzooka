@@ -50,7 +50,8 @@ val akkaHttpCore         = "com.typesafe.akka" %% "akka-http-core" % akkaHttpVer
 val akkaHttpExperimental = "com.typesafe.akka" %% "akka-http" % akkaHttpVersion
 val akkaHttpTestkit      = "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % "test"
 val akkaHttpSession      = "com.softwaremill.akka-http-session" %% "core" % "0.5.2"
-val akkaStack            = Seq(akkaHttpCore, akkaHttpExperimental, akkaHttpTestkit, akkaHttpSession)
+val akkaHttpSessionJwt   = "com.softwaremill.akka-http-session" %% "jwt" % "0.5.2"
+val akkaStack            = Seq(akkaHttpCore, akkaHttpExperimental, akkaHttpTestkit, akkaHttpSession, akkaHttpSessionJwt)
 val swagger              = "com.github.swagger-akka-http" %% "swagger-akka-http" % "0.11.0"
 
 val argon2java = "de.mkammerer" % "argon2-jvm" % argon2javaVersion
